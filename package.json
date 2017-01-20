@@ -1,0 +1,17 @@
+{
+  "name": "socket-io-server",
+  "version": "0.0.1",
+  "description": "socket.io server",
+  "dependencies": {
+    "console-stamp": "^0.2.2",
+    "express": "^4.13.4",
+    "redis": "^2.6.0-2",
+    "sidekiq": "^1.1.1",
+    "socket.io": "^1.4.6",
+    "firebase-admin": "^4.0.4",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "socket.io-client": "^1.4.6"
+  }
+}
