@@ -7,14 +7,13 @@ The chating server part is base on the socket.io, which enables real-time bidrec
 
 ## Usages
 
-###1. Prepare firebase serive account:
+1. Prepare firebase serive account:
 
 
     https://firebase.google.com/docs/admin/setup
 
 
-
-###2. Subscribe to the topic
+2. Subscribe to the topic
 
 Based on the publish/subscribe model, FCM topic messageing allows you to send a message to multiple devices that have opted in to a particular topic. You compose topic messages as needed, and FCM handles routing and delivering the message reliably to the right devices.
 
@@ -27,7 +26,7 @@ explame: Subscribe the client app to a "fan2c" topic use swift in iOS.
             print("I'm registered!")
             FIRMessaging.messaging().subscribe(toTopic: "/topics/fan2c")
 
-        } //swift
+        } 
    
     
 More detail information about iOS in
@@ -37,12 +36,12 @@ More detail information about iOS in
 More detail information about android in
           https://firebase.google.com/docs/cloud-messaging/android/topic-messaging
 
-###3. Send a push notification
+3. Send a push notification
 
 
     var ref = admin.database().ref('/notificationRequests').push({
       "username": "fan2c",
       "message": "test"
-    }); //node.js
+    });
 
 
